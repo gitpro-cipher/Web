@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="VirusProtect - Advanced Security Analysis Platform with AI-Powered Threat Detection">
+    <meta name="keywords" content="security, malware, scanning, threat detection, AI security">
+    <title>VirusProtect - Sentinel System</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Matrix Rain Background -->
+    <canvas id="matrix-rain"></canvas>
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-shield-alt"></i>
+                <span class="logo-text">VIRUSPROTECT</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#screenshots" class="nav-link">Screenshots</a></li>
+                <li><a href="#architecture" class="nav-link">Architecture</a></li>
+                <li><a href="#api" class="nav-link">API Docs</a></li>
+                <li><a href="#installation" class="nav-link">Installation</a></li>
+                <li><a href="#security" class="nav-link">Security</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title glitch" data-text="VIRUSPROTECT">VIRUSPROTECT</h1>
+                <p class="hero-subtitle">Sentinel System</p>
+                <p class="hero-description">
+                    Advanced security analysis platform with AI-powered threat detection. 
+                    Scan files, detect secrets, monitor web security.
+                </p>
+                <div class="hero-badges">
+                    <span class="badge"><i class="fas fa-check-circle"></i> Status: Online</span>
+                    <span class="badge"><i class="fas fa-code-branch"></i> CI/CD Active</span>
+                    <span class="badge"><i class="fas fa-certificate"></i> MIT License</span>
+                </div>
+                <div class="hero-buttons">
+                    <a href="https://github.com/Dharaneesh20/Virus-Protect" target="_blank" class="btn btn-primary">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                    <a href="#installation" class="btn btn-secondary">
+                        <i class="fas fa-download"></i> Get Started
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="shield-container">
+                    <div class="shield-outer"></div>
+                    <div class="shield-middle"></div>
+                    <div class="shield-inner">
+                        <i class="fas fa-shield-virus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Core Features</h2>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Advanced Malware Scanning</h3>
+                    <p>VirusTotal integration with 70+ antivirus engines for comprehensive threat detection</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Hash-based file analysis</li>
+                        <li><i class="fas fa-check"></i> Upload & deep scan</li>
+                        <li><i class="fas fa-check"></i> AI-powered explanations</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-secret"></i>
+                    </div>
+                    <h3>Intelligent Secrecy Scanner</h3>
+                    <p>Multi-pattern detection for leaked API keys, credentials, and sensitive data</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Project-wide scanning</li>
+                        <li><i class="fas fa-check"></i> Batch processing</li>
+                        <li><i class="fas fa-check"></i> AI remediation assistant</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Web Security Monitor</h3>
+                    <p>HTTP header analysis and URL reputation checking</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Security headers validation</li>
+                        <li><i class="fas fa-check"></i> Real-time monitoring</li>
+                        <li><i class="fas fa-check"></i> Config generator</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Multi-Provider AI</h3>
+                    <p>Support for 6+ AI providers for enhanced security analysis</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Claude, Gemini, GPT-4</li>
+                        <li><i class="fas fa-check"></i> DeepSeek, Grok, Ollama</li>
+                        <li><i class="fas fa-check"></i> Secure key management</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Quarantine System</h3>
+                    <p>Isolated storage for malicious files with secure deletion</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> File isolation</li>
+                        <li><i class="fas fa-check"></i> Secure deletion</li>
+                        <li><i class="fas fa-check"></i> History tracking</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="feature-icon">
+                        <i class="fas fa-history"></i>
+                    </div>
+                    <h3>Audit Trail</h3>
+                    <p>Complete logs of all security operations with timestamps</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Real-time statistics</li>
+                        <li><i class="fas fa-check"></i> Operation history</li>
+                        <li><i class="fas fa-check"></i> JSON-based storage</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Section -->
+    <section id="screenshots" class="screenshots">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Application Screenshots</h2>
+            <div class="screenshots-grid">
+                <div class="screenshot-item" data-aos="zoom-in">
+                    <img src="https://i.ibb.co/Rp3KcBNn/Screenshot-from-2026-01-08-00-15-23.png" alt="Dashboard Overview">
+                    <div class="screenshot-overlay">
+                        <h3>Dashboard Overview</h3>
+                        <p>Real-time security statistics and threat monitoring</p>
+                    </div>
+                </div>
+                <div class="screenshot-item" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="https://i.ibb.co/twwwqzKP/Screenshot-from-2026-01-08-00-15-32.png" alt="File Scanning">
+                    <div class="screenshot-overlay">
+                        <h3>File Scanning Interface</h3>
+                        <p>Drag & drop file upload with instant scanning</p>
+                    </div>
+                </div>
+                <div class="screenshot-item" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="https://i.ibb.co/1GWv3YW7/Screenshot-from-2026-01-08-00-16-11.png" alt="Scan Results">
+                    <div class="screenshot-overlay">
+                        <h3>Scan Results</h3>
+                        <p>Comprehensive threat analysis from 70+ engines</p>
+                    </div>
+                </div>
+                <div class="screenshot-item" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="https://i.ibb.co/JFmkrFrB/Screenshot-from-2026-01-08-00-16-16.png" alt="AI Analysis">
+                    <div class="screenshot-overlay">
+                        <h3>AI Threat Analysis</h3>
+                        <p>AI-powered threat explanations and recommendations</p>
+                    </div>
+                </div>
+                <div class="screenshot-item" data-aos="zoom-in" data-aos-delay="400">
+                    <img src="https://i.ibb.co/jPB98vqL/Screenshot-from-2026-01-08-00-17-01.png" alt="Secret Detection">
+                    <div class="screenshot-overlay">
+                        <h3>Secret Detection</h3>
+                        <p>Identify leaked API keys and credentials</p>
+                    </div>
+                </div>
+                <div class="screenshot-item" data-aos="zoom-in" data-aos-delay="500">
+                    <img src="https://i.ibb.co/JFF40cjF/Screenshot-from-2026-01-08-00-17-31.png" alt="Web Monitoring">
+                    <div class="screenshot-overlay">
+                        <h3>Web Security Monitor</h3>
+                        <p>HTTP header analysis and URL reputation</p>
+                    </div>
+                </div>
+                <div class="screenshot-item" data-aos="zoom-in" data-aos-delay="600">
+                    <img src="https://i.ibb.co/zWrbGCrz/Screenshot-from-2026-01-08-00-17-38.png" alt="Security Analysis">
+                    <div class="screenshot-overlay">
+                        <h3>Security Analysis</h3>
+                        <p>Detailed vulnerability assessments</p>
+                    </div>
+                </div>
+                <div class="screenshot-item" data-aos="zoom-in" data-aos-delay="700">
+                    <img src="https://i.ibb.co/r2DtN60c/Screenshot-from-2026-01-08-00-20-10.png" alt="Quarantine">
+                    <div class="screenshot-overlay">
+                        <h3>Quarantine Management</h3>
+                        <p>Isolated storage for malicious files</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Architecture Section -->
+    <section id="architecture" class="architecture">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">System Architecture</h2>
+            
+            <div class="arch-grid">
+                <div class="arch-card" data-aos="fade-right">
+                    <h3><i class="fas fa-laptop-code"></i> Frontend Stack</h3>
+                    <div class="tech-list">
+                        <span class="tech-badge">React 19.2</span>
+                        <span class="tech-badge">Vite</span>
+                        <span class="tech-badge">TailwindCSS</span>
+                        <span class="tech-badge">Framer Motion</span>
+                        <span class="tech-badge">React Router</span>
+                        <span class="tech-badge">Axios</span>
+                        <span class="tech-badge">React Dropzone</span>
+                        <span class="tech-badge">React Markdown</span>
+                    </div>
+                </div>
+
+                <div class="arch-card" data-aos="fade-left">
+                    <h3><i class="fas fa-server"></i> Backend Stack</h3>
+                    <div class="tech-list">
+                        <span class="tech-badge">Node.js</span>
+                        <span class="tech-badge">Express 5.2</span>
+                        <span class="tech-badge">Multer</span>
+                        <span class="tech-badge">Axios</span>
+                        <span class="tech-badge">Crypto</span>
+                        <span class="tech-badge">CORS</span>
+                        <span class="tech-badge">JSON DB</span>
+                        <span class="tech-badge">dotenv</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="folder-structure" data-aos="fade-up">
+                <h3>Project Structure</h3>
+                <pre class="code-block"><code>Virus-Protect/
+├── client/               <span class="comment"># React frontend (Vite)</span>
+│   ├── src/
+│   │   ├── components/   <span class="comment"># Reusable UI components</span>
+│   │   │   ├── AIConfigModal.jsx
+│   │   │   ├── FileUpload.jsx
+│   │   │   ├── ScanResult.jsx
+│   │   │   └── Sidebar.jsx
+│   │   ├── pages/        <span class="comment"># Route-based pages</span>
+│   │   │   ├── DashboardHome.jsx
+│   │   │   ├── ScanFilePage.jsx
+│   │   │   ├── ScanProjectPage.jsx
+│   │   │   ├── WebMonitorPage.jsx
+│   │   │   ├── HistoryPage.jsx
+│   │   │   └── QuarantinePage.jsx
+│   │   ├── layouts/      <span class="comment"># Layout wrappers</span>
+│   │   └── assets/       <span class="comment"># Static resources</span>
+│   └── package.json
+├── server/               <span class="comment"># Express API server</span>
+│   ├── index.js          <span class="comment"># Main server file</span>
+│   ├── db.json           <span class="comment"># Local database</span>
+│   ├── uploads/          <span class="comment"># Temporary file uploads</span>
+│   ├── quarantine/       <span class="comment"># Quarantined files</span>
+│   └── package.json
+└── .github/workflows/    <span class="comment"># CI/CD pipelines</span></code></pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- API Documentation Section -->
+    <section id="api" class="api-docs">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">API Documentation</h2>
+            
+            <div class="api-grid">
+                <div class="api-card" data-aos="flip-left">
+                    <div class="api-header">
+                        <span class="http-method get">GET</span>
+                        <code>/api/history</code>
+                    </div>
+                    <p>Retrieve complete scan history with timestamps</p>
+                    <div class="api-response">
+                        <strong>Response:</strong>
+                        <pre><code>[{
+  "id": "uuid",
+  "timestamp": "ISO-8601",
+  "type": "file_scan",
+  "result": {...}
+}]</code></pre>
+                    </div>
+                </div>
+
+                <div class="api-card" data-aos="flip-left" data-aos-delay="100">
+                    <div class="api-header">
+                        <span class="http-method post">POST</span>
+                        <code>/api/scan/file</code>
+                    </div>
+                    <p>Upload and scan file with VirusTotal</p>
+                    <div class="api-response">
+                        <strong>Body:</strong> multipart/form-data
+                        <pre><code>{
+  "file": File
+}</code></pre>
+                    </div>
+                </div>
+
+                <div class="api-card" data-aos="flip-left" data-aos-delay="200">
+                    <div class="api-header">
+                        <span class="http-method post">POST</span>
+                        <code>/api/scan/project</code>
+                    </div>
+                    <p>Scan entire project for secret leaks</p>
+                    <div class="api-response">
+                        <strong>Body:</strong>
+                        <pre><code>{
+  "path": "/project/path"
+}</code></pre>
+                    </div>
+                </div>
+
+                <div class="api-card" data-aos="flip-left" data-aos-delay="300">
+                    <div class="api-header">
+                        <span class="http-method post">POST</span>
+                        <code>/api/scan/url</code>
+                    </div>
+                    <p>Analyze web URL security headers</p>
+                    <div class="api-response">
+                        <strong>Body:</strong>
+                        <pre><code>{
+  "url": "https://example.com"
+}</code></pre>
+                    </div>
+                </div>
+
+                <div class="api-card" data-aos="flip-left" data-aos-delay="400">
+                    <div class="api-header">
+                        <span class="http-method post">POST</span>
+                        <code>/api/explain</code>
+                    </div>
+                    <p>Get AI-powered threat explanation</p>
+                    <div class="api-response">
+                        <strong>Body:</strong>
+                        <pre><code>{
+  "provider": "anthropic",
+  "model": "claude-3-5-sonnet",
+  "apiKey": "sk-...",
+  "prompt": "Explain...",
+  "context": {...}
+}</code></pre>
+                    </div>
+                </div>
+
+                <div class="api-card" data-aos="flip-left" data-aos-delay="500">
+                    <div class="api-header">
+                        <span class="http-method delete">DELETE</span>
+                        <code>/api/file</code>
+                    </div>
+                    <p>Delete quarantined file or history log</p>
+                    <div class="api-response">
+                        <strong>Body:</strong>
+                        <pre><code>{
+  "id": "uuid",
+  "type": "quarantine"
+}</code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="external-apis" data-aos="fade-up">
+                <h3>External Integrations</h3>
+                <div class="integration-grid">
+                    <div class="integration-card">
+                        <i class="fas fa-virus"></i>
+                        <h4>VirusTotal API</h4>
+                        <p>Malware scanning with 70+ engines</p>
+                        <a href="https://www.virustotal.com/gui/join-us" target="_blank">Get API Key →</a>
+                    </div>
+                    <div class="integration-card">
+                        <i class="fas fa-robot"></i>
+                        <h4>Anthropic Claude</h4>
+                        <p>Advanced AI threat analysis</p>
+                        <a href="https://www.anthropic.com/" target="_blank">Learn More →</a>
+                    </div>
+                    <div class="integration-card">
+                        <i class="fas fa-brain"></i>
+                        <h4>Google Gemini</h4>
+                        <p>Fast security explanations</p>
+                        <a href="https://ai.google.dev/" target="_blank">Learn More →</a>
+                    </div>
+                    <div class="integration-card">
+                        <i class="fas fa-lightbulb"></i>
+                        <h4>OpenAI GPT</h4>
+                        <p>Comprehensive reports</p>
+                        <a href="https://platform.openai.com/" target="_blank">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Installation Section -->
+    <section id="installation" class="installation">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Installation Guide</h2>
+            
+            <div class="install-steps">
+                <div class="step" data-aos="fade-right">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Clone Repository</h3>
+                        <div class="code-block">
+                            <button class="copy-btn" onclick="copyCode(this)">
+                                <i class="fas fa-copy"></i>
+                            </button>
+                            <pre><code>git clone https://github.com/Dharaneesh20/Virus-Protect.git
+cd Virus-Protect</code></pre>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step" data-aos="fade-left">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Backend Setup</h3>
+                        <div class="code-block">
+                            <button class="copy-btn" onclick="copyCode(this)">
+                                <i class="fas fa-copy"></i>
+                            </button>
+                            <pre><code>cd server
+npm install
+echo "VT_API_KEY=your_key_here" > .env
+echo "PORT=5000" >> .env
+npm start</code></pre>
+                        </div>
+                        <p class="step-note">Server runs on http://localhost:5000</p>
+                    </div>
+                </div>
+
+                <div class="step" data-aos="fade-right">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Frontend Setup</h3>
+                        <div class="code-block">
+                            <button class="copy-btn" onclick="copyCode(this)">
+                                <i class="fas fa-copy"></i>
+                            </button>
+                            <pre><code>cd client
+npm install
+npm run dev</code></pre>
+                        </div>
+                        <p class="step-note">Application opens at http://localhost:5173</p>
+                    </div>
+                </div>
+
+                <div class="step" data-aos="fade-left">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Configure AI Providers (Optional)</h3>
+                        <ul class="config-list">
+                            <li><i class="fas fa-check"></i> Click "AI Config" in dashboard</li>
+                            <li><i class="fas fa-check"></i> Select your preferred AI provider</li>
+                            <li><i class="fas fa-check"></i> Enter API key (stored securely)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="prerequisites" data-aos="fade-up">
+                <h3>Prerequisites</h3>
+                <div class="prereq-grid">
+                    <div class="prereq-item">
+                        <i class="fab fa-node-js"></i>
+                        <span>Node.js 18.x or 20.x</span>
+                    </div>
+                    <div class="prereq-item">
+                        <i class="fab fa-npm"></i>
+                        <span>npm 9+</span>
+                    </div>
+                    <div class="prereq-item">
+                        <i class="fas fa-key"></i>
+                        <span>VirusTotal API Key</span>
+                    </div>
+                    <div class="prereq-item">
+                        <i class="fas fa-robot"></i>
+                        <span>AI Provider Keys (Optional)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security Section -->
+    <section id="security" class="security">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Security Features</h2>
+            
+            <div class="security-grid">
+                <div class="security-card" data-aos="zoom-in">
+                    <i class="fas fa-lock"></i>
+                    <h3>Data Privacy</h3>
+                    <p>No sensitive data leaves your system except VirusTotal API calls</p>
+                </div>
+                <div class="security-card" data-aos="zoom-in" data-aos-delay="100">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Encrypted Storage</h3>
+                    <p>AI API keys stored client-side with encryption</p>
+                </div>
+                <div class="security-card" data-aos="zoom-in" data-aos-delay="200">
+                    <i class="fas fa-ban"></i>
+                    <h3>File Isolation</h3>
+                    <p>Quarantine system with isolated storage</p>
+                </div>
+                <div class="security-card" data-aos="zoom-in" data-aos-delay="300">
+                    <i class="fas fa-database"></i>
+                    <h3>Local Storage</h3>
+                    <p>JSON-based database, no credentials required</p>
+                </div>
+                <div class="security-card" data-aos="zoom-in" data-aos-delay="400">
+                    <i class="fas fa-network-wired"></i>
+                    <h3>CORS Protection</h3>
+                    <p>Configured for localhost development</p>
+                </div>
+                <div class="security-card" data-aos="zoom-in" data-aos-delay="500">
+                    <i class="fas fa-user-shield"></i>
+                    <h3>Responsible Disclosure</h3>
+                    <p>Follow security policy for vulnerabilities</p>
+                </div>
+            </div>
+
+            <div class="cicd-status" data-aos="fade-up">
+                <h3>CI/CD Pipeline Status</h3>
+                <div class="pipeline-info">
+                    <div class="pipeline-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Multi-Version Testing (Node 18.x, 20.x)</span>
+                    </div>
+                    <div class="pipeline-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Client Build Verification</span>
+                    </div>
+                    <div class="pipeline-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Server Dependency Validation</span>
+                    </div>
+                    <div class="pipeline-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Automated on Push/PR</span>
+                    </div>
+                </div>
+                <a href="https://github.com/Dharaneesh20/Virus-Protect/actions" target="_blank" class="btn btn-primary">
+                    View CI/CD Status →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Get Involved</h2>
+            
+            <div class="contact-grid">
+                <div class="contact-card" data-aos="fade-up">
+                    <i class="fab fa-github"></i>
+                    <h3>GitHub Repository</h3>
+                    <p>Star, fork, and contribute to the project</p>
+                    <a href="https://github.com/Dharaneesh20/Virus-Protect" target="_blank" class="btn btn-secondary">
+                        View Repository →
+                    </a>
+                </div>
+
+                <div class="contact-card" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-bug"></i>
+                    <h3>Report Issues</h3>
+                    <p>Found a bug? Let us know!</p>
+                    <a href="https://github.com/Dharaneesh20/Virus-Protect/issues" target="_blank" class="btn btn-secondary">
+                        Report Issue →
+                    </a>
+                </div>
+
+                <div class="contact-card" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Security Reports</h3>
+                    <p>Responsible disclosure for vulnerabilities</p>
+                    <a href="mailto:dharaneeshrs@proton.me" class="btn btn-secondary">
+                        Contact Security →
+                    </a>
+                </div>
+            </div>
+
+            <div class="contribute-section" data-aos="fade-up">
+                <h3>Contribute to VirusProtect</h3>
+                <p>We welcome contributions from the cybersecurity community!</p>
+                <div class="contribute-ideas">
+                    <div class="idea-tag">Add regex patterns</div>
+                    <div class="idea-tag">Implement tests</div>
+                    <div class="idea-tag">Docker setup</div>
+                    <div class="idea-tag">Network analyzer</div>
+                    <div class="idea-tag">PWA support</div>
+                    <div class="idea-tag">More AI providers</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>VIRUSPROTECT</span>
+                </div>
+                <p>Built with React, Express, Node.js, and Paranoia.</p>
+                <div class="footer-links">
+                    <a href="https://github.com/Dharaneesh20/Virus-Protect" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:dharaneeshrs@proton.me">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+                <p class="copyright">MIT License - Copyright (c) 2026 Dharaneesh20</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
